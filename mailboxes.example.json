@@ -1,0 +1,36 @@
+{
+  "defaultProfile": "congty",
+  "maxListMessages": 200,
+  "profiles": [
+    {
+      "id": "congty",
+      "imap": {
+        "host": "mail.congty.com",
+        "port": 993,
+        "user": "ban@congty.com",
+        "pass": "thay-bang-mat-khau-that"
+      },
+      "smtp": {
+        "host": "mail.congty.com",
+        "port": 587,
+        "user": "ban@congty.com",
+        "pass": "thay-bang-mat-khau-that"
+      }
+    },
+    {
+      "id": "canhan",
+      "imap": {
+        "host": "imap.gmail.com",
+        "port": 993,
+        "user": "ban@gmail.com",
+        "pass": "app-password"
+      },
+      "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "user": "ban@gmail.com",
+        "pass": "app-password"
+      }
+    }
+  ]
+}

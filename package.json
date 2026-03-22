@@ -1,0 +1,60 @@
+{
+  "name": "zimbra-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "zimbra-mcp": "bin/zimbra-mcp.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechGuyVN/zimbra-mcp.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:release": "node scripts/bundle.mjs",
+    "prepublishOnly": "npm test && npm run build:release",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run lint && npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "mail",
+    "imap",
+    "smtp",
+    "zimbra"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "MCP server for Zimbra (and compatible) IMAP/SMTP mail",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "imapflow": "^1.2.16",
+    "nodemailer": "^8.0.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^25.5.0",
+    "@types/nodemailer": "^7.0.11",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "esbuild": "^0.25.12",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.1",
+    "vitest": "^3.2.4"
+  }
+}
