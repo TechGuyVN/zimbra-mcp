@@ -1,6 +1,6 @@
 {
   "name": "zimbra-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -36,7 +36,7 @@
     "smtp",
     "zimbra"
   ],
-  "author": "",
+  "author": "viethq@vihat.vn",
   "license": "ISC",
   "description": "MCP server for Zimbra (and compatible) IMAP/SMTP mail",
   "dependencies": {
